@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "digital-7";
+  src: local("digital-7"), url(./fonts/digital-7.ttf), format("truetype");
+}
+
+:root {
+  --black: #2e2027;
+  --red: #842633;
+}
+
+.scoreboard {
+  width: 58%;
+  margin: 10rem auto;
+  background-image: url("https://www.texturepalace.com/gallery/metal/0405/3metal_texture_big_100405.jpg");
+  background-size: cover;
+  color: #e3fffc;
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+  padding: 5rem;
+  border: 4px solid #aaaaaa;
+  font-family: "Ozone";
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  /* height: 20rem; */
+}
+
+.home,
+.away {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+  border: 3px solid #e3fffc;
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+
+.home {
+  background-color: #067353;
+}
+
+.away {
+  background-color: #067353;
+}
+
+.home__name,
+.away__name,
+.down__title,
+.toGo__title,
+.ballOn__title,
+.quarter__title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.home__score,
+.away__score {
+  font-family: "digital-7";
+  font-size: 7rem;
+  width: 90%;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--red);
+  padding: 5%;
+}
+
+.timer {
+  font-family: "Ozone";
+  font-size: 4.1rem;
+  padding: 1.5rem 1% 1.5rem 1%;
+  margin: 0 2% 0 2%;
+  text-align: center;
+  background-color: var(--black);
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  height: 20rem;
+  background-image: url("https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/scratched-and-scraped-metal-texture-6.jpg");
+  background-size: cover;
+  margin: 3% 28% 3% 28%;
+  border: 4px solid #aaaaaa;
+}
+
+.down,
+.toGo,
+.ballOn,
+.quarter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+}
+
+.down__value,
+.toGo__value,
+.ballOn__value,
+.quarter__value {
+  font-family: "Ozone";
+  font-size: 5rem;
+  color: var(--red);
+  width: 7rem;
+  text-align: center;
+  background-color: var(--black);
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 1.6rem;
+  border: 1px solid white;
+}
+
+.buttons {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.homeButtons__touchdown,
+.homeButtons__fieldGoal,
+.awayButtons__touchdown,
+.awayButtons__fieldGoal {
+  margin: 1rem;
+  border-radius: 4px;
+}
